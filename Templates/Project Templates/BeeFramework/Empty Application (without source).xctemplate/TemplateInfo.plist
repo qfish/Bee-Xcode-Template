@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.bee-framework.templates.cocoa</string>
+		<string>com.bee-framework.templates.base</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for any application without the framework source code. That means you should add the framework manually.</string>
+	<key>Identifier</key>
+	<string>com.bee-framework.templates.emptyapp.nonesource</string>
+	<key>Template Author</key>
+	<string>{Bee} - QFish.cn@gmail.com</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Prefix.pch:objC:importBeeHeader</key>
+		<string>#import &quot;Bee.h&quot;</string>
+		<key>view_iPhone/AppBoard_iPhone.m</key>
+		<dict>
+			<key>Path</key>
+			<string>AppBoard_iPhone.m</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPhone</string>
+			</array>
+		</dict>
+		<key>view_iPhone/AppBoard_iPhone.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppBoard_iPhone.h</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPhone</string>
+			</array>
+		</dict>
+		<key>view_iPad/AppBoard_iPad.m</key>
+		<dict>
+			<key>Path</key>
+			<string>AppBoard_iPad.m</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPad</string>
+			</array>
+		</dict>
+		<key>view_iPad/AppBoard_iPad.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppBoard_iPad.h</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPad</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importBeeHeader</string>
+		<string>view_iPhone/AppBoard_iPhone.h</string>
+		<string>view_iPhone/AppBoard_iPhone.m</string>
+		<string>view_iPad/AppBoard_iPad.h</string>
+		<string>view_iPad/AppBoard_iPad.m</string>
+	</array>
+</dict>
+</plist>

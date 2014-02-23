@@ -19,3 +19,11 @@ DerivedData
 
 #CocoaPods
 Pods
+
+/Templates/Project Templates/BeeFramework/BeeFramework.xctemplate
+
+/Templates/Project Templates/BeeFramework/BeeSource.xctemplate
+/Templates/Project Templates/BeeFramework/BeeVendor.xctemplate
+/Templates/Project Templates/BeeFramework/Empty Application (with source).xctemplate
+/Templates/Project Templates/BeeFramework/Sidebar Application.xctemplate
+/Templates/Project Templates/BeeFramework/Tabbed Application.xctemplate
