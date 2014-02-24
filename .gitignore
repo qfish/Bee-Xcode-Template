@@ -27,3 +27,7 @@ Pods
 /Templates/Project Templates/BeeFramework/Empty Application (with source).xctemplate
 /Templates/Project Templates/BeeFramework/Sidebar Application.xctemplate
 /Templates/Project Templates/BeeFramework/Tabbed Application.xctemplate
+
+/template.tar.gz
+/temp/
+/build.sh
