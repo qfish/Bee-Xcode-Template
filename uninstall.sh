@@ -22,40 +22,4 @@ if [ -d "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK" ]; then
   echo "remove $TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
 fi
 
-echo "
-//
-//   ______    ______    ______
-//  /\  __ \  /\  ___\  /\  ___\
-//  \ \  __<  \ \  __\_ \ \  __\_
-//   \ \_____\ \ \_____\ \ \_____\
-//    \/_____/  \/_____/  \/_____/
-//
-//
-//  Copyright (c) 2013-2014, {Bee} open source community
-//  http://www.bee-framework.com
-//
-//
-//    Xcode Template For BeeFramework
-//    
-"
-# 复制
-
-if [[ ! -d "$TEMPLATE_FILE_PATH" ]]; then
-  sudo mkdir -p "$TEMPLATE_FILE_PATH"
-  echo "mkdir $TEMPLATE_FILE_PATH"
-fi
-
-sudo cp -rf "$SOURCE_TEMPLATE_FILE" "$TEMPLATE_FILE_PATH"
-
-if [[ ! -d "$TEMPLATE_PROJECT_PATH" ]]; then
-  sudo mkdir -p "$TEMPLATE_PROJECT_PATH"
-  echo "mkdir $TEMPLATE_PROJECT_PATH"
-fi
-
-sudo cp -rf "$SOURCE_TEMPLATE_PROJECT" "$TEMPLATE_PROJECT_PATH"
-
-# cleanup
-
-echo "
-# Bee Xcode Template is installed to $TEMPLATE_PATH. 
-# "
+echo "Bee Xcode Template is uninstalled. Have a nice Day~"
