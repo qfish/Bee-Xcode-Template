@@ -31,7 +31,7 @@ And when create a new file in Xcode, it should like this:
 
 this script can batch adding compile flags like `-fno-objc-arc`or `-fobjc-arc`.
 
-Get More info here [](https://github.com/qfish/xproj).
+Get More info here [https://github.com/qfish/xproj](https://github.com/qfish/xproj).
 
 Run command below get **Help**.
 
