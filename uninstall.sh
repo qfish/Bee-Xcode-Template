@@ -22,4 +22,5 @@ if [ -d "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK" ]; then
   echo "remove $TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
 fi
 
-echo "Bee Xcode Template is uninstalled. Have a nice Day~"
+echo "Bee Xcode Template is uninstalled. 
+Have a nice Day~"
