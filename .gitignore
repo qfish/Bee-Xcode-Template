@@ -31,3 +31,6 @@ Pods
 /template.tar.gz
 /temp/
 /build.sh
+
+/Templates/Empty Application (framework).xctemplate/
+/Templates/Empty Application (framework).xctemplate.zip

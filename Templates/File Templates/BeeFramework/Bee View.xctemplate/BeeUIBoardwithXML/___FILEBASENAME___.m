@@ -32,59 +32,51 @@ SUPPORT_RESOURCE_LOADING( YES )
 
 - (void)load
 {
-	[super load];
 }
 
 - (void)unload
 {
-	[super unload];
 }
 
 #pragma mark Signal
 
-ON_SIGNAL2( BeeUIBoard, signal )
+ON_CREATE_VIEWS(signal)
 {
-    [super handleUISignal:signal];
-
-    if ( [signal is:BeeUIBoard.CREATE_VIEWS] )
-    {	
-    }
-    else if ( [signal is:BeeUIBoard.DELETE_VIEWS] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.LAYOUT_VIEWS] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.LOAD_DATAS] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.FREE_DATAS] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.WILL_APPEAR] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.DID_APPEAR] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.WILL_DISAPPEAR] )
-    {
-    }
-    else if ( [signal is:BeeUIBoard.DID_DISAPPEAR] )
-    {
-    }
+    
 }
 
-ON_SIGNAL2( BeeUINavigationBar, signal )
+ON_DELETE_VIEWS(signal)
 {
-	[super handleUISignal:signal];
-	
-	if ( [signal is:BeeUINavigationBar.LEFT_TOUCHED] )
-	{
-	}
-	else if ( [signal is:BeeUINavigationBar.RIGHT_TOUCHED] )
-	{
-	}
+    
+}
+
+ON_LAYOUT_VIEWS(signal)
+{
+    
+}
+
+ON_DID_APPEAR(signal)
+{
+    
+}
+
+ON_WILL_APPEAR(signal)
+{
+    
+}
+
+ON_LOAD_DATAS(signal)
+{
+    
+}
+
+ON_LEFT_BUTTON_TOUCHED(signal)
+{
+}
+
+ON_RIGHT_BUTTON_TOUCHED(signal)
+{
+    
 }
 
 @end

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ui namespace="___FILEBASENAMEASIDENTIFIER___">
-    
-	<linear orientation="v" class="wrapper">
-        <!-- add your UI elements here -->
-    </linear>
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+  </col>
    
-	<style type="text/css">
-        .wrapper {
-            width: 100%;
-            height: 100%;
-        }
-	</style>
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+  </style>
 </ui>

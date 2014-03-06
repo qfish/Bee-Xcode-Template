@@ -39,6 +39,9 @@
 
 - (void)load
 {
+  bee.ui.config.ASR = YES;
+  bee.ui.config.iOS6Mode = YES;
+  
 	if ( [BeeSystemInfo isDevicePad] )
 	{
 		self.window.rootViewController = [AppBoard_iPad sharedInstance];
