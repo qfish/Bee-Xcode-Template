@@ -37,4 +37,9 @@ SUPPORT_RESOURCE_LOADING( YES )
     // TODO: fill data
 }
 
+- (void)layoutDidFinish
+{
+    // TODO: custom layout here
+}
+
 @end

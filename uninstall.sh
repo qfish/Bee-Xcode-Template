@@ -14,13 +14,16 @@ SOURCE_TEMPLATE_PROJECT="$SOURCE_TEMPLATE/$TEMPLATE_PROJECT/$BEEFRAMEWORK"
 # # 如果已有，先删除上一个版本的
 if [ -d "$TEMPLATE_FILE_PATH/$BEEFRAMEWORK" ]; then
   sudo rm -rf "$TEMPLATE_FILE_PATH/$BEEFRAMEWORK"
-  echo "remove $TEMPLATE_FILE_PATH/$BEEFRAMEWORK"
+  echo "[remove] $TEMPLATE_FILE_PATH/$BEEFRAMEWORK"
 fi
 
 if [ -d "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK" ]; then
   sudo rm -rf "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
-  echo "remove $TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
+  echo "[remove] $TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
 fi
 
-echo "Bee Xcode Template is uninstalled. 
-Have a nice Day~"
+echo "
+\\033[31mBee Xcode Template has been uninstalled.
+
+\\033[34mHave a Nice Day ~\\033[0m
+"

@@ -35,45 +35,42 @@
 {
 }
 
-#pragma mark Signal
+#pragma mark - Signal
 
-ON_CREATE_VIEWS(signal)
-{
-    
-}
-
-ON_DELETE_VIEWS(signal)
-{
-    
-}
-
-ON_LAYOUT_VIEWS(signal)
-{
-    
-}
-
-ON_DID_APPEAR(signal)
-{
-    
-}
-
-ON_WILL_APPEAR(signal)
-{
-    
-}
-
-ON_LOAD_DATAS(signal)
-{
-    
-}
-
-ON_LEFT_BUTTON_TOUCHED(signal)
+ON_CREATE_VIEWS( signal )
 {
 }
 
-ON_RIGHT_BUTTON_TOUCHED(signal)
+ON_DELETE_VIEWS( signal )
 {
-    
+}
+
+ON_LAYOUT_VIEWS( signal )
+{
+}
+
+ON_WILL_APPEAR( signal )
+{
+}
+
+ON_DID_APPEAR( signal )
+{
+}
+
+ON_WILL_DISAPPEAR( signal )
+{
+}
+
+ON_DID_DISAPPEAR( signal )
+{
+}
+
+ON_SIGNAL3( BeeUINavigationBar, LEFT_TOUCHED, signal )
+{
+}
+
+ON_SIGNAL3( BeeUINavigationBar, RIGHT_TOUCHED, signal )
+{
 }
 
 @end
