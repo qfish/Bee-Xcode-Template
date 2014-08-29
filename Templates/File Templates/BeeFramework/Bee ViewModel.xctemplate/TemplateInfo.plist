@@ -82,7 +82,7 @@
 			<key>Identifier</key>
 			<string>datasForResponAPI</string>
 			<key>Name</key>
-			<string>Property name model data</string>
+			<string>Property name for model data</string>
 			<key>Required</key>
 			<string>NO</string>
 			<key>Type</key>
