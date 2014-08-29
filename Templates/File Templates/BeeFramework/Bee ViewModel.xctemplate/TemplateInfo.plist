@@ -76,13 +76,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>API</string>
+			<string>feedArray</string>
 			<key>Description</key>
 			<string>the API used in the model</string>
 			<key>Identifier</key>
 			<string>datasForResponAPI</string>
 			<key>Name</key>
-			<string>Property for response.datas</string>
+			<string>Property name model data</string>
 			<key>Required</key>
 			<string>NO</string>
 			<key>Type</key>
@@ -90,13 +90,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>API</string>
+			<string>NSObject</string>
 			<key>Description</key>
 			<string>the API used in the model</string>
 			<key>Identifier</key>
 			<string>classForResponData</string>
 			<key>Name</key>
-			<string>Class of response data</string>
+			<string>Class of model data</string>
 			<key>Required</key>
 			<string>NO</string>
 			<key>Type</key>
@@ -108,6 +108,6 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>Summary</key>
-	<string>There are 4 kind BeeViewModel: BeeOnceViewModel, BeePagingViewModel, BeePublishViewModel and BeeStreamViewModel. Choose wisely.</string>
+	<string>There are 4 kind BeeViewModel: BeeOnceViewModel, BeePublishViewModel, BeeStreamViewModel and BeePagingViewModel. Choose wisely.</string>
 </dict>
 </plist>
