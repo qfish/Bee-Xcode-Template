@@ -21,7 +21,4 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
-@synthesize id = _id;
-@synthesize <#property#> = _<#property#>;
-
 @end

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.objective-c-source</string>
+		<string>public.objective-c-plus-plus-source</string>
+	</array>
+	<key>ChooserOnly</key>
+	<true/>
+	<key>DefaultCompletionName</key>
+	<string>ViewModel</string>
+	<key>Description</key>
+	<string>There are 4 kind BeeViewModel: BeeOnceViewModel, BeePagingViewModel, BeePublishViewModel and BeeStreamViewModel. Choose wisely.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.m</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>BeeViewModel</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Identifier</key>
+			<string>cocoaTouchSubclass</string>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Suffixes</key>
+			<dict>
+				<key>BeeViewModel</key>
+				<string>Model</string>
+			</dict>
+			<key>Type</key>
+			<string>class</string>
+			<key>Values</key>
+			<array>
+				<string>NSObject</string>
+				<string>BeePublishViewModel</string>
+				<string>BeeStreamViewModel</string>
+				<string>BeePagingViewModel</string>
+				<string>BeeOnceViewModel</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>API</string>
+			<key>Description</key>
+			<string>the API used in the model</string>
+			<key>Identifier</key>
+			<string>apiForModel</string>
+			<key>Name</key>
+			<string>API for Model</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>API</string>
+			<key>Description</key>
+			<string>the API used in the model</string>
+			<key>Identifier</key>
+			<string>datasForResponAPI</string>
+			<key>Name</key>
+			<string>Property for response.datas</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>API</string>
+			<key>Description</key>
+			<string>the API used in the model</string>
+			<key>Identifier</key>
+			<string>classForResponData</string>
+			<key>Name</key>
+			<string>Class of response data</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Summary</key>
+	<string>There are 4 kind BeeViewModel: BeeOnceViewModel, BeePagingViewModel, BeePublishViewModel and BeeStreamViewModel. Choose wisely.</string>
+</dict>
+</plist>
