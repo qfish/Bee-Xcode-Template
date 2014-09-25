@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.applicationBase</string>
+		<string>com.apple.dt.unit.iosBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+	</array>
+	<key>Template Author</key>
+	<string>{Bee} - QFish.cn@gmail.com</string>
+	<key>Concrete</key>
+	<string>No</string>
+	<key>Definitions</key>
+	<dict>
+		<key>*:*:importFoundation</key>
+		<string>#import &lt;Foundation/Foundation.h&gt;
+</string>
+		<key>*:imports:importCocoa</key>
+		<string>#import &lt;UIKit/UIKit.h&gt;</string>
+		<key>Info.plist:UISupportedInterfaceOrientations~iPad</key>
+		<string>&lt;key&gt;UISupportedInterfaceOrientations~ipad&lt;/key&gt;
+&lt;array&gt;
+	&lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
+	&lt;string&gt;UIInterfaceOrientationPortraitUpsideDown&lt;/string&gt;
+	&lt;string&gt;UIInterfaceOrientationLandscapeLeft&lt;/string&gt;
+	&lt;string&gt;UIInterfaceOrientationLandscapeRight&lt;/string&gt;
+&lt;/array&gt;</string>
+		<key>Info.plist:UISupportedInterfaceOrientations~iPhone</key>
+		<string>&lt;key&gt;UISupportedInterfaceOrientations&lt;/key&gt;
+&lt;array&gt;
+     &lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
+     &lt;string&gt;UIInterfaceOrientationLandscapeLeft&lt;/string&gt;
+     &lt;string&gt;UIInterfaceOrientationLandscapeRight&lt;/string&gt;
+&lt;/array&gt;</string>
+		<key>___PACKAGENAME___.pch</key>
+		<dict>
+			<key>Beginning</key>
+			<string>//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>___PACKAGENAME___.pch:objC</key>
+		<dict>
+			<key>Beginning</key>
+			<string>#ifdef __OBJC__</string>
+			<key>End</key>
+			<string>#endif</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAME___.pch:objC:importCocoa</key>
+		<string>#import &lt;UIKit/UIKit.h&gt;</string>
+		<key>___PACKAGENAME___.pch:objC:importBeeFramework</key>
+		<string>#import &quot;Bee.h&quot;</string>
+		<key>Base.lproj/LaunchScreen.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>LaunchScreen.xib</string>
+			<key>SortOrder</key>
+			<integer>101</integer>
+		</dict>
+		<key>Info.plist:LaunchScreen</key>
+		<string>&lt;key&gt;UILaunchStoryboardName&lt;/key&gt;
+&lt;string&gt;LaunchScreen&lt;/string&gt;
+</string>
+		<key>Info.plist:iPhone</key>
+		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
+&lt;true/&gt;
+&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
+&lt;array&gt;
+	&lt;string&gt;armv7&lt;/string&gt;
+&lt;/array&gt;</string>
+		<key>Info.plist:statusBarTintForNavBar</key>
+		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;UINavigationBar&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Style&lt;/key&gt;
+        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
+        &lt;key&gt;Translucent&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>libz.dylib</key>
+		<dict>
+			<key>Path</key>
+			<string>/usr/lib/libz.dylib</string>
+			<key>PathType</key>
+			<string>DeveloperDir</string>
+			<key>FileType</key>
+			<string>wrapper.framework</string>
+			<key>Group</key>
+			<string>library</string>
+		</dict>
+		<key>libsqlite3.dylib</key>
+		<dict>
+			<key>Path</key>
+			<string>/usr/lib/libsqlite3.dylib</string>
+			<key>PathType</key>
+			<string>DeveloperDir</string>
+			<key>FileType</key>
+			<string>wrapper.framework</string>
+			<key>Group</key>
+			<string>library</string>
+		</dict>
+		<key>libxml2.dylib</key>
+		<dict>
+			<key>Path</key>
+			<string>/usr/lib/libxml2.dylib</string>
+			<key>PathType</key>
+			<string>DeveloperDir</string>
+			<key>FileType</key>
+			<string>wrapper.framework</string>
+			<key>Group</key>
+			<string>library</string>
+		</dict>
+		<key>model/</key>
+		<dict>
+			<key>Path</key>
+			<string>model</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>controller/</key>
+		<dict>
+			<key>Path</key>
+			<string>controller</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>view_iPhone/resource/</key>
+		<dict>
+			<key>Path</key>
+			<string>view_iPhone/resource</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPhone</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>view_iPhone/templates/</key>
+		<dict>
+			<key>Path</key>
+			<string>view_iPhone/templates</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPhone</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>view_iPad/resource/</key>
+		<dict>
+			<key>Path</key>
+			<string>view_iPad/resource</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPad</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>view_iPad/templates/</key>
+		<dict>
+			<key>Path</key>
+			<string>view_iPad/templates</string>
+			<key>Group</key>
+			<array>
+				<string>view_iPad</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.bee-framework.templates.base</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___.pch</string>
+		<string>___PACKAGENAME___.pch:objC</string>
+		<string>*:*:importFoundation</string>
+		<string>___PACKAGENAME___.pch:objC:importCocoa</string>
+		<string>___PACKAGENAME___.pch:objC:importBeeFramework</string>
+		<string>Info.plist:iPhone</string>
+		<string>Info.plist:LaunchScreen</string>
+		<string>Images.xcassets</string>
+		<string>Base.lproj/LaunchScreen.xib</string>
+		<string>model/</string>
+		<string>controller/</string>
+		<string>view_iPhone/resource/</string>
+		<string>view_iPhone/templates/</string>
+		<string>view_iPad/resource/</string>
+		<string>view_iPad/templates/</string>
+		<string>libz.dylib</string>
+		<string>libsqlite3.dylib</string>
+		<string>libxml2.dylib</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Universal</string>
+			<key>Description</key>
+			<string>Which device family to create a project for</string>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Name</key>
+			<string>Devices:</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-Universal.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>1,2</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPad.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>2</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPhone.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict/>
+			<key>Release</key>
+			<dict>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+			<string>latest_iphoneos</string>
+			<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+			<string>iPhone Developer</string>
+		</dict>
+		<key>SDK</key>
+		<string>iphoneos</string>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>NO</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>___PACKAGENAME___/___PACKAGENAME___.pch</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>NO</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>/usr/include/libxml2</string>
+			</dict>
+			<key>Frameworks</key>
+			<array>
+				<string>CoreGraphics</string>
+				<string>AVFoundation</string>
+				<string>CFNetwork</string>
+				<string>CoreMedia</string>
+				<string>CoreText</string>
+				<string>CoreVideo</string>
+				<string>MobileCoreServices</string>
+				<string>QuartzCore</string>
+				<string>Security</string>
+				<string>SystemConfiguration</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+</dict>
+</plist>

@@ -7,20 +7,45 @@
 		<string>com.bee-framework.templates.cocoa</string>
 		<string>com.bee-framework.templates.base</string>
 	</array>
+	<key>Template Author</key>
+	<string>{Bee} - QFish.cn@gmail.com</string>
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
 	<string>This template provides a starting point for any application without the framework source code. That means you should add the framework manually.</string>
 	<key>Identifier</key>
 	<string>com.bee-framework.templates.emptyapp.nonesource</string>
-	<key>Template Author</key>
-	<string>{Bee} - QFish.cn@gmail.com</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Definitions</key>
 	<dict>
+		<key>___PACKAGENAME___-Prefix.pch:objC:importFoundation</key>
+		<dict>
+			<key>Beginning</key>
+			<string>#import </string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;
+            </string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:*</key>
+		<string>#import &lt;Availability.h&gt;
+
+#ifndef __IPHONE____*____0
+#warning &quot;This project uses features only available in iOS SDK ___*___.0 and later.&quot;
+#endif
+</string>
 		<key>___PACKAGENAME___-Prefix.pch:objC:importBeeHeader</key>
-		<string>#import &quot;Bee.h&quot;</string>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Content</key>
+			<string>#import &quot;Bee.h&quot;</string>
+		</dict>
 		<key>view_iPhone/AppBoard_iPhone.m</key>
 		<dict>
 			<key>Path</key>
@@ -58,6 +83,55 @@
 			</array>
 		</dict>
 	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_Universal.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAME___-Prefix.pch:objC:importBeeHeader</string>

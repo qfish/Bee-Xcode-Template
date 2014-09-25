@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.objectiveCApplication</string>
+		<string>com.apple.dt.unit.iPhoneBase</string>
+		<string>com.apple.dt.unit.prefixable</string>
+	</array>
+	<key>Identifier</key>
+	<string>com.bee-framework.templates.cocoa</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Definitions</key>
+	<dict>
+		<key>AppDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.h</string>
+		</dict>
+		<key>AppDelegate.m</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.m</string>
+		</dict>
+		<key>main.m:main</key>
+		<dict>
+			<key>Beginning</key>
+			<string>int main(int argc, char * argv[]) {</string>
+			<key>End</key>
+			<string>}</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>main.m:main:UIApplicationMain</key>
+		<string>@autoreleasepool {
+    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+}
+</string>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>main.m:comments</string>
+		<string>main.m:imports:importCocoa</string>
+		<string>main.m:imports:importHeader:AppDelegate.h</string>
+		<string>main.m:main:UIApplicationMain</string>
+		<string>AppDelegate.h</string>
+		<string>AppDelegate.m</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Universal</string>
+			<key>Description</key>
+			<string>Which device family to create a project for</string>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Name</key>
+			<string>Devices</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>1,2</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>2</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Release</key>
+			<dict>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+			</dict>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+			<string>iPhone Developer</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>UIKit</string>
+				<string>Foundation</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
