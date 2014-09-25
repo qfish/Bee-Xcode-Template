@@ -3,14 +3,8 @@
 BEEFRAMEWORK="BeeFramework"
 
 TEMPLATE_PATH="$HOME/Library/Developer/Xcode/Templates"
-TEMPLATE_FILE="File Templates"
-TEMPLATE_PROJECT="Project Templates"
-TEMPLATE_FILE_PATH="$TEMPLATE_PATH/$TEMPLATE_FILE"
-TEMPLATE_PROJECT_PATH="$TEMPLATE_PATH/$TEMPLATE_PROJECT"
 
 SOURCE_TEMPLATE="./Templates"
-SOURCE_TEMPLATE_FILE="$SOURCE_TEMPLATE/$TEMPLATE_FILE/$BEEFRAMEWORK"
-SOURCE_TEMPLATE_PROJECT="$SOURCE_TEMPLATE/$TEMPLATE_PROJECT/$BEEFRAMEWORK"
 
 echo "
    ______    ______    ______
@@ -31,35 +25,22 @@ echo "
 "
 
 # 如果已有，先删除上一个版本的
-if [ -d "$TEMPLATE_FILE_PATH/$BEEFRAMEWORK" ]; then
-  sudo rm -rf "$TEMPLATE_FILE_PATH/$BEEFRAMEWORK"
-  echo "[remove] $TEMPLATE_FILE_PATH/$BEEFRAMEWORK"
-fi
 
-if [ -d "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK" ]; then
-  sudo rm -rf "$TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
-  echo "[remove] $TEMPLATE_PROJECT_PATH/$BEEFRAMEWORK"
-fi
+sudo find "$TEMPLATE_PATH" -type d -name "*$BEEFRAMEWORK*" > ".deleles"
 
-# # 复制
-if [[ ! -d "$TEMPLATE_FILE_PATH" ]]; then
-  sudo mkdir -p "$TEMPLATE_FILE_PATH"
-  echo "[mkdir] $TEMPLATE_FILE_PATH"
-fi
+while read line; do
+  echo "[Removed]   $line"
+  sudo rm -rf "$line";
+done < ".deleles"
 
-sudo cp -rf "$SOURCE_TEMPLATE_FILE" "$TEMPLATE_FILE_PATH"
-sudo find "$TEMPLATE_FILE_PATH" -name ".gitignore" -depth -exec rm {} \;
+sudo rm -rf ".deleles"
 
-if [[ ! -d "$TEMPLATE_PROJECT_PATH" ]]; then
-  sudo mkdir -p "$TEMPLATE_PROJECT_PATH"
-  echo "[mkdir] $TEMPLATE_PROJECT_PATH"
-fi
+# 复制
+sudo cp -rf "$SOURCE_TEMPLATE" "$TEMPLATE_PATH/.."
 
-sudo cp -rf "$SOURCE_TEMPLATE_PROJECT" "$TEMPLATE_PROJECT_PATH"
-sudo find "$TEMPLATE_PROJECT_PATH" -name ".gitignore" -depth -exec rm {} \;
+# cleanup
+sudo find "$TEMPLATE_PATH" -name ".beeframework.gitignore" -depth -exec rm {} \;
 
-# # cleanup
-
-echo "[copy to] $TEMPLATE_PATH."
+echo "[Installed] $TEMPLATE_PATH."
 
 echo "\n\\033[31mBee Xcode Template has been installed.\\033[0m\n"
