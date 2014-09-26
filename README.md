@@ -1,7 +1,9 @@
 Bee-Xcode-Template
 ==================
 
-Xcode Template for BeeFramework
+Xcode Template for BeeFramework. 
+
+You can find old versions [here](https://github.com/qfish/Bee-Xcode-Template/releases), such as [Xcode5](https://github.com/qfish/Bee-Xcode-Template/releases/tag/Xcode5).
 
 ## Install
 
