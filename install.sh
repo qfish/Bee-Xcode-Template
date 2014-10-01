@@ -23,6 +23,10 @@ echo "
 
 =======================================================
 "
+if [[ ! -d "$TEMPLATE_PATH" ]]; then
+  sudo mkdir -p "$TEMPLATE_PATH"
+  echo "[mkdir] $TEMPLATE_PATH"
+fi
 
 # 如果已有，先删除上一个版本的
 
